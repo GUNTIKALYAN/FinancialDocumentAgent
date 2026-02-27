@@ -72,7 +72,7 @@ FileNotFoundError: PDF not found
 
 ---
 
-### Circular Import Crash
+### 3. Circular Import Crash
 
 **Issue**
 cannot import name 'run_crew'
@@ -180,6 +180,7 @@ Analyze Tesla’s liquidity position and identify key financial risks.
 FastAPI, CrewAI, Groq LLM (Llama 3.1), Python, PyPDFLoader, Pydantic
 
 ## Project Structure
+```bash
 project/
 │
 ├── main.py
