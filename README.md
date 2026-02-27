@@ -98,7 +98,6 @@ Input should be BaseTool
 - Proper tool binding implemented.
 
 
----
 
 ### 5. LLM Rate Limit Failures (Groq TPM)
 **Issue**
