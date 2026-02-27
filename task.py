@@ -1,5 +1,3 @@
-# task.py
-
 from crewai import Task
 from agents import (
     financial_analyst,
@@ -7,10 +5,7 @@ from agents import (
     risk_assessor
 )
 
-# ==============================
 # Financial Summary
-# ==============================
-
 financial_summary = Task(
     description=(
         "You are given a financial document below:\n\n"
@@ -33,10 +28,7 @@ financial_summary = Task(
     agent=financial_analyst,
 )
 
-# ==============================
 # Investment Recommendation
-# ==============================
-
 investment_analysis = Task(
     description=(
         "Identify risks explicitly mentioned or logically inferred "
@@ -52,10 +44,7 @@ investment_analysis = Task(
     agent=investment_advisor,
 )
 
-# ==============================
 # Risk Assessment
-# ==============================
-
 risk_assessment = Task(
     description=(
         "Identify financial and operational risks present in the financial document. "

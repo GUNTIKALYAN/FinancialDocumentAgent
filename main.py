@@ -20,10 +20,7 @@ from tools import read_pdf_text
 
 app = FastAPI(title="Financial Document Analyzer")
 
-# ==============================
 # Crew Runner
-# ==============================
-
 def run_crew(query: str, file_path: str):
 
     try:
@@ -60,10 +57,7 @@ def run_crew(query: str, file_path: str):
 
     return result
 
-# ==============================
 # Routes
-# ==============================
-
 @app.get("/")
 async def root():
     return {"message": "Financial Document Analyzer API is running"}

@@ -1,5 +1,3 @@
-# agents.py
-
 import os
 from dotenv import load_dotenv
 load_dotenv()
@@ -8,10 +6,7 @@ from crewai import Agent, LLM
 
 os.environ["GROQ_API_KEY"] = os.getenv("GROQ_API_KEY")
 
-# ==============================
 # LLM
-# ==============================
-
 llm = LLM(
     model="groq/llama-3.1-8b-instant",
     temperature=0.2, 
@@ -19,10 +14,7 @@ llm = LLM(
     max_tokens=1200
 )
 
-# ==============================
 # Agents
-# ==============================
-
 financial_analyst = Agent(
     role="Senior Financial Analyst",
     goal="Analyze financial documents and produce structured summaries.",

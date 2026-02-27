@@ -1,12 +1,8 @@
-# tools.py
 
 import os
 from langchain_community.document_loaders import PyPDFLoader
 
-# ============================
 # PDF Reader
-# ============================
-
 def read_pdf_text(file_path: str, max_pages: int = 3) -> str:
     """
     Reads limited pages from a PDF to avoid token overflow.
